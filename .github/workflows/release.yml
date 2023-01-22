@@ -1,0 +1,30 @@
+name: Release
+
+permissions: write-all
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  release:
+    name: release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: lts/*
+      - name: Install release dependencies
+        run: |
+          npm install semantic-release@^20.0.2 \
+          @semantic-release/git@^10.0.1 semantic-release-factorio@^1.5.0 \
+          conventional-changelog-conventionalcommits-factorio@^1.0.3
+      - name: Run semantic-release
+        run: npx semantic-release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          FACTORIO_TOKEN: ${{ secrets.FACTORIO_TOKEN }}

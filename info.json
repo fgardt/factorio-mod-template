@@ -1,0 +1,12 @@
+{
+  "name": "[internal-mod-name]",
+  "version": "0.0.0",
+  "title": "[MOD DISPLAY NAME]",
+  "author": "[YOUR MODS.FACTORIO.COM USERNAME]",
+  "homepage": "[HOMEPAGE/REPO URL]",
+  "description": "[SHORT DESCRIPTION]",
+  "factorio_version": "1.1",
+  "dependencies": [
+    "base"
+  ]
+}

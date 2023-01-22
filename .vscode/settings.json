@@ -1,0 +1,26 @@
+{
+    "Lua.diagnostics.globals": [
+        "game",
+        "settings",
+        "script",
+        "global",
+        "entity",
+        "defines",
+        "data",
+        "rendering",
+        "mods",
+        "log",
+        "util",
+        "table",
+        "serpent",
+        "table_size",
+        "commands",
+        "remote",
+        "__DebugAdapter",
+        "__Profiler"
+    ],
+    "Lua.diagnostics.disable": [
+        "lowercase-global"
+    ],
+    "Lua.runtime.version": "Lua 5.2"
+}

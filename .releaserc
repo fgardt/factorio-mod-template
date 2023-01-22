@@ -1,0 +1,40 @@
+{
+    "branches": [
+        "main"
+    ],
+    "plugins": [
+        [
+            "@semantic-release/commit-analyzer",
+            {
+                "config": "conventional-changelog-conventionalcommits-factorio"
+            }
+        ],
+        [
+            "@semantic-release/release-notes-generator",
+            {
+                "config": "conventional-changelog-conventionalcommits-factorio"
+            }
+        ],
+        "semantic-release-factorio",
+        [
+            "@semantic-release/github",
+            {
+                "assets": [
+                    {
+                        "path": "*_*.*.*.zip",
+                        "label": "Packaged Mod"
+                    }
+                ]
+            }
+        ],
+        [
+            "@semantic-release/git",
+            {
+                "assets": [
+                    "changelog.txt",
+                    "info.json"
+                ]
+            }
+        ]
+    ]
+}
