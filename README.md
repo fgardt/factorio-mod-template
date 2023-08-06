@@ -51,7 +51,7 @@ Now you need to go to your repository settings > `Secrets and variables` > `Acti
 The [`semantic-release-factorio` plugin](https://github.com/fgardt/semantic-release-factorio) uses the `git archive` command to package the mod. \
 That way you can specify what folders / files to exclude from your packaged mod by specifying them in [`.gitattributes`](.gitattributes).
 
-If you want to locally test packaging of your mod you can run the following command: \
+If you want to locally test packaging of your mod you can run the following command:
 ```sh
 git archive --format zip --prefix [YOUR-MOD-NAME]/ --worktree-attributes --output [YOUR-MOD-NAME]_[VERSION].zip HEAD
 ```
