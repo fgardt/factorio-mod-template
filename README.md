@@ -59,4 +59,4 @@ git archive --format zip --prefix [YOUR-MOD-NAME]/ --worktree-attributes --outpu
 ## Need help?
 
 Checkout the [official Factorio Discord](https://discord.gg/factorio) and check the pins in the `#mod-making` channel. \
-There is also the [Lua API documentation](https://lua-api.factorio.com/latest/), [prototype documentation](https://wiki.factorio.com/Prototype_definitions) and the [modding section in the wiki](https://wiki.factorio.com/Modding).
+There is also the [Lua API documentation](https://lua-api.factorio.com/latest/) and the [modding section in the wiki](https://wiki.factorio.com/Modding).
