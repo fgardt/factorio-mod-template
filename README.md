@@ -15,11 +15,21 @@ Once you push new commits to the main branch the release action will trigger. \
 First it scans all your commit messages to figure out what the new version should be and what to put into the changelog. \
 To make this possible you need to use [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/).
 
-| Commit type         | Changelog section |
-| ------------------- | ----------------- |
-| `feat` or `feature` | `Features`        |
-| `fix`               | `Bugfixes`        |
-| `perf`              | `Optimizations`   |
+| Commit type                 | Changelog section |
+| --------------------------- | ----------------- |
+| `feat` or `feature`         | `Features`        |
+| `fix`                       | `Bugfixes`        |
+| `perf` or `performance`     | `Optimizations`   |
+| `compat` or `compatibility` | `Compatibility`   |
+| `balance`                   | `Balancing`       |
+| `graphics`                  | `Graphics`        |
+| `sound`                     | `Sounds`          |
+| `gui`                       | `Gui`             |
+| `info`                      | `Info`            |
+| `locale`                    | `Locale`          |
+| `translate`                 | `Translation`     |
+| `control`                   | `Control`         |
+| `other`                     | `Changes`         |
 
 Because a push to the main branch triggers the release action it is recommended to work on a separate branch until your work is done and then merge that branch into main to release it. \
 _Or you just work locally and if you want to release you push your changes to main, up to you how you want to do it ;)_
