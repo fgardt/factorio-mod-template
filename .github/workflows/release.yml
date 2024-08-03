@@ -22,7 +22,7 @@ jobs:
         run: |
           npm install semantic-release@^24.0.0 \
           @semantic-release/git@^10.0.1 semantic-release-factorio@^1.5.1 \
-          conventional-changelog-conventionalcommits-factorio@^1.1.0
+          conventional-changelog-conventionalcommits-factorio@^2.0.0
       - name: Run semantic-release
         run: npx semantic-release
         env:
