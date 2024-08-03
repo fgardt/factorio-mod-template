@@ -20,9 +20,9 @@ jobs:
           node-version: lts/*
       - name: Install release dependencies
         run: |
-          npm install semantic-release@^24.0.0 \
-          @semantic-release/git@^10.0.1 semantic-release-factorio@^1.5.1 \
-          conventional-changelog-conventionalcommits-factorio@^2.0.0
+          npm install semantic-release@^24 \
+          @semantic-release/git@^10 semantic-release-factorio@^1.5.1 \
+          conventional-changelog-conventionalcommits@^8
       - name: Run semantic-release
         run: npx semantic-release
         env:
