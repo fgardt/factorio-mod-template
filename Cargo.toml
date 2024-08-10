@@ -1,0 +1,18 @@
+[package]
+name = "[internal-mod-name]"
+version = "0.0.0"
+edition = "2021"
+
+[dependencies]
+rivets = { git = "https://github.com/factorio-rivets/rivets" }
+
+[lib]
+crate-type = ["dylib"]
+path = "src/lib.rs"
+
+[lints.clippy]
+nursery = { level = "warn", priority = -1 }
+pedantic = { level = "warn", priority = -1 }
+unwrap_used = "warn"
+expect_used = "allow"
+trivial_regex = "allow"

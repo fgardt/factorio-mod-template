@@ -4,3 +4,7 @@
 
 *.code-workspace
 *.zip
+
+# Added by cargo
+
+/target
