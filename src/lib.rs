@@ -6,5 +6,3 @@ fn valid(this: Opaque) -> bool {
     println!("Hello from LuaSurface::valid!");
     unsafe { back(this) }
 }
-
-rivets::initialize!();
