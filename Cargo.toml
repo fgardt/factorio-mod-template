@@ -1,10 +1,10 @@
 [package]
-name = "[internal-mod-name]"
+name = "internal-mod-name"
 version = "0.0.0"
 edition = "2021"
 
 [dependencies]
-rivets = { git = "https://github.com/factorio-rivets/rivets" }
+rivets = { git = "https://github.com/factorio-rivets/rivets-rs" }
 
 [lib]
 crate-type = ["dylib"]
