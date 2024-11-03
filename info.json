@@ -10,6 +10,7 @@
     "base"
   ],
   "quality_required": false,
+  "rail_bridges_required": false,
   "space_travel_required": false,
   "spoiling_required": false,
   "freezing_required": false,
