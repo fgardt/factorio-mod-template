@@ -8,6 +8,7 @@
             {
                 "preset": "conventionalcommits",
                 "releaseRules": [
+                    { "breaking": true, "release": "major" },
                     { "type": "info", "release": "patch" },
                     { "type": "feat", "release": "minor" },
                     { "type": "feature", "release": "minor" },
